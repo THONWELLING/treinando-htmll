@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="pages" href="login.html">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulários</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Clientes</h1>
+  </div>
+  <fieldset>
+    <legend>Dados Pessoais</legend>
+    <form action="login.html" method="GET">
+      <label>
+        <h2>Nome: </h2>
+        <input type="text" name="usuario"  id="name" placeholder="FirstName" autofocus>
+      </label>
+      <label>
+        <h2>Sobrenome: </h2>
+        <input type="text" name="usuario"  id="name" value="LastName">
+      </label>
+        <label>
+          <h2>Email: </h2>
+        <input type="email" id="email" value="Ex: Thon@thon.com.br">
+        </label>
+        <label>
+          <h2>Password:</h2>
+          <input type="password"  id="password" placeholder="Password">
+        </label>
+        <div class="gender">
+              <h2>Male</h2>
+            <input type="radio" name="gender">
+              <h2>Female</h2>
+            <input type="radio" name="gender">
+        </div> <br>
+        <label>
+        <h2>Birth Date</h2>
+        <input type="date">
+        </label> <br>
+      <label>
+        <h2>Phone/Whatsapp:</h2>
+        <input type="tel" value="(011) 9 9000-0000">
+      </label>
+    </fieldset>
+      <select name="order" size="1" multiple>
+        <option value="Sale">Quero Vender</option>
+        <option value="Buy">Quero Comprar</option>
+        <option value="Buy">Prestador de Serviços</option>
+        <option value="Buy">Não Decidi Ainda</option>
+      </select>
+        <label>
+          <h2>Description:</h2> <br>
+          <textarea name="descricao"></textarea>
+        </label>
+      <label>
+        <input type="checkbox">
+        Eu declaro que li e aceito os <a href="pages/terms.html" target="_blank" class="link-Terms">termos e utilização </a>
+      </label>
+      <button>Cadastrar</button>
+  </form>
+  
+</body>
+</html>
