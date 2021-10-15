@@ -1,3 +1,10 @@
+/* VARAIÁVEIS   */
+:root {
+  --header-color: #000;
+  --h1-color: #493c41;
+  --h2-color: #6e7378;
+}
+
 /*FONTES*/
 
 @font-face {
@@ -14,6 +21,88 @@ body {
   margin: 0;
 }
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+header ul,
+header li {
+  list-style: none;
+}
+header img {
+  width: 120px;
+  margin-left: 20px;
+}
+.navigation ul {
+  display: flex;
+}
+.navigation li {
+  margin: 0 10px;
+}
+.navigation a {
+  text-decoration: none;
+  color: var(--header-color);
+  text-transform: uppercase;
+}
+.menu ul {
+  display: flex;
+}
+.menu li {
+  margin: 0 10px;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--header-color);
+  text-transform: uppercase;
+}
+.hamburger-icon {
+  width: 18px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.hamburger-icon div {
+  height: 2px;
+  background-color: var(--header-color);
+}
+
+/*    MAIN   */
+
+main {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.info {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main h1 {
+  font-size: 40px;
+  color: var(--h1-color);
+}
+main h1,
+main h2 {
+  margin: 0;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+main h2 {
+  font-size: 14px;
+  font-family: "GothamBook", Arial, Helvetica, Arial;
+  color: var(--h2-color);
+}
+main h2 a {
+  color: var(--h1-color);
 }
