@@ -165,3 +165,28 @@ footer .arrow {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 1200px) {
+  header .navigation {
+    display: none;
+  }
+  header .menu li {
+    display: none;
+  }
+  header .menu li.hamburger {
+    display: block;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .buttons-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons-area a {
+    margin: 10px 20px;
+    width: calc(100vw - 80px);
+  }
+}
