@@ -244,3 +244,41 @@ header {
 .section-filters li:first-child {
   border-left: none;
 }
+.section-photos {
+  width: 100vw;
+  max-width: 1140px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-photo {
+  width: 280px;
+}
+.photo-area {
+  margin: 10px;
+  width: 260px;
+  height: 160px;
+}
+.photo-area img {
+  width: inherit;
+  height: inherit;
+}
+.photo-info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: inherit;
+  height: inherit;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+}
+.photo-info h5 {
+  font-size: 19px;
+  font-weight: 600;
+}
+.photo-area:hover .photo-info {
+  display: flex;
+}
