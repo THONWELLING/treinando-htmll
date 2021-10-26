@@ -471,6 +471,7 @@ header {
   margin-right: 20px;
   padding: 20px;
   text-align: center;
+  border-radius: 8px;
 }
 .section-priceitem:last-child {
   margin-right: 0;
@@ -819,5 +820,146 @@ footer {
   .menu li.active a {
     border: 0;
     color: #b28756;
+  }
+  .section-aboutUs {
+    flex-direction: column;
+  }
+  .section-aboutUs--left {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .section-aboutUs--right {
+    width: auto;
+  }
+  .section-services {
+    flex-wrap: wrap;
+  }
+  .section-service {
+    min-width: 50%;
+    margin-bottom: 30px;
+  }
+  .section-service:first-child {
+    border-left: 0;
+  }
+  .section-team {
+    max-width: 580px;
+  }
+  .section-map-info {
+    width: auto;
+  }
+  .section-map {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-map-area {
+    width: auto;
+  }
+  .section-map-infoitem {
+    margin-bottom: 25px;
+  }
+  .section-map-infoitem:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .menu .opening {
+    display: block;
+    width: 45px;
+    margin-right: 40px;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 70vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu li a {
+    font-weight: bold;
+    height: 50px;
+    font-size: 18px;
+    margin-right: 35px;
+    border: 0;
+  }
+  .menu li.active a {
+    border: 0;
+    color: #b28756;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner h2 {
+    font-size: 16px;
+  }
+  .section-aboutUs {
+    flex-direction: column;
+  }
+  .section-aboutUs--left {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .section-aboutUs--right {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .section-aboutUs--right img {
+    width: 100%;
+  }
+  .section-services {
+    flex-wrap: wrap;
+  }
+  .section-service {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+  .section-service:first-child {
+    border-left: 0;
+  }
+  .section-filters {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .section-photo {
+    width: 320px;
+  }
+  .photo-area {
+    width: 300px;
+    height: 180px;
+  }
+  .section-team {
+    max-width: 280px;
+  }
+  .section-partner {
+    min-width: 30%;
+    text-align: center;
+  }
+  .section-map-info {
+    width: auto;
+  }
+  .section-map {
+    padding: 0px;
+    padding-bottom: 250px;
+  }
+  .section-map-area {
+    width: auto;
+  }
+  .section-map-infoitem {
+    margin-bottom: 25px;
+  }
+  .section-map-infoitem:last-child {
+    margin-bottom: 0;
   }
 }
