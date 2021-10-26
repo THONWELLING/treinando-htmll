@@ -263,6 +263,7 @@ header {
 .photo-area img {
   width: inherit;
   height: inherit;
+  border-radius: 8px;
 }
 .photo-info {
   position: absolute;
@@ -274,6 +275,7 @@ header {
   align-items: center;
   color: #fff;
   flex-direction: column;
+  border-radius: 8px;
 }
 .photo-info h5 {
   font-size: 19px;
@@ -297,6 +299,7 @@ header {
   overflow: hidden;
   max-width: 880px;
   margin: auto;
+  border-radius: 8px;
 }
 .section-team .sliders {
   width: 1000vw;
@@ -309,6 +312,7 @@ header {
   display: inline-block;
   background-color: #fff;
   margin-right: 20px;
+  border-radius: 8px;
 }
 .section-team .slide-area {
   display: flex;
@@ -519,32 +523,32 @@ header {
   margin: auto;
   padding-bottom: 40px;
 }
-.section-premium--left {
+.section-premium-left {
   flex: 1;
   text-align: right;
 }
-.section-premium--left img {
+.section-premium-left img {
   width: 300px;
   margin-right: 30px;
 }
-.section-premium--right {
+.section-premium-right {
   flex: 1;
 }
-.section-premium--item {
+.section-premium-item {
   display: flex;
   margin-bottom: 20px;
 }
-.section-premium--item img {
+.section-premium-item img {
   width: 20px;
   height: 20px;
   margin-right: 20px;
 }
-.section-premium--item div {
+.section-premium-item div {
   flex: 1;
   color: #999;
   line-height: 20px;
 }
-.section-premium--item div h4 {
+.section-premium-item div h4 {
   color: #000;
   font-size: 17px;
   font-weight: 600;
@@ -666,6 +670,7 @@ header {
   border-bottom: 1px solid #ccc;
   outline: 0;
   margin-top: 10px;
+  text-transform: capitalize;
 }
 .section-contact textarea {
   height: 100px;
@@ -695,6 +700,7 @@ header {
   padding: 30px;
   background-color: rgba(218, 218, 218, 0.7);
   color: #000;
+  border-radius: 8px;
 }
 .section-map-infoitem {
   display: flex;
@@ -716,4 +722,62 @@ header {
 .section-map-infoitem-img img {
   width: 13px;
   height: auto;
+}
+footer {
+  background-color: #000;
+  padding: 20px;
+}
+.footer-area {
+  max-width: 1140px;
+  margin: auto;
+  color: #fff;
+  display: flex;
+}
+.footer-item {
+  flex: 1;
+}
+.footer-social {
+  display: flex;
+}
+.footer-social a {
+  width: 25px;
+  height: 25px;
+  background-color: #333;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+.footer-social a:hover {
+  background-color: #b28756;
+}
+.footer-social img {
+  height: 10px;
+}
+.footer-item2 {
+  flex: 1;
+  color: #999;
+  line-height: 20px;
+  font-size: 13px;
+  padding: 0 10px 10px 10px;
+}
+.footer-item3 form {
+  flex: 1;
+  background-color: #333;
+  text-align: center;
+  padding: 30px;
+}
+.footer-item3 input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
 }
