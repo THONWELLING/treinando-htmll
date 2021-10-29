@@ -1,13 +1,144 @@
-.container {
+/* .container {
+  background-color: darkgray;
   display: grid;
-  grid-template-columns: auto 200px 100px;
-  grid-template-rows: 100px 300px 460px;
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 .item {
   background-color: blue;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px;
   color: white;
   font-size: 20px;
+} */
+
+/*       brincando com posicionamento forma longa 
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.item3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.item8 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
+} 
+
+colocando o item 7 em uma posição distinta 
+na coluna da direita e pegando toda a coluna 
+
+.item7 {
+  background-color: green;
+  color: black;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.item5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+*/
+/*
+        forma curta  e utilizando  o span
+.item1 {
+  grid-column: 1 / span 2; o span diz vai da coluna 1 ao final do item 2
+  grid-row: 1 / span 3;
+}
+*/
+
+/*    
+   grid-area funciona com 4 valores sendo
+   1º representa o grid-row-start
+   2º represente o grid-column start
+   3º representa o grid-row-end
+   4º representa o grid-column-end
+
+.item1 {
+  grid-area: 1 / 1 / span 3 / span 2;
+}
+.item6 {
+  grid-area: 4 / 2 / span 2 / span 2;
+}
+*/
+
+/* .container {
+  background-color: darkgray;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "item1 item1 item2"
+    "item3 item3 item2"
+    "item4 item4 item4";
+}
+.item {
+  background-color: blue;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+} */
+
+.container {
+  background-color: darkgray;
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header header header header"
+    "menu content content content"
+    "footer footer footer ad";
+}
+.item {
+  background-color: blue;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: menu;
+}
+section {
+  grid-area: content;
+}
+footer {
+  grid-area: footer;
+}
+.ad {
+  grid-area: ad;
+}
+@media (max-width: 750px) {
+  .container {
+    grid-template-areas:
+      "header header header menu"
+      "content content content content"
+      "ad ad ad ad"
+      "footer footer footer footer";
+  }
 }
