@@ -200,3 +200,15 @@ header .line {
   background-position: left;
   background-size: cover;
 }
+.area5 {
+  background-image: url("../img/bg4.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 630px;
+}
+footer {
+  background-color: #333;
+  color: azure;
+  padding: 80px;
+  text-align: center;
+}
