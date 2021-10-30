@@ -5,13 +5,48 @@ body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-header .line {
-  background-color: #117050;
-  height: 10px;
-}
+
 .container {
   max-width: 1140px;
   margin: auto;
+}
+.bar {
+  background-color: #117050;
+  width: 130px;
+  height: 21px;
+}
+h1 {
+  font-family: "oswald", sans serif;
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 90px;
+  margin-bottom: 26px;
+}
+h2 {
+  font-family: "oswald", sans serif;
+  font-size: 33px;
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 43px;
+  text-transform: capitalize;
+}
+.button {
+  display: inline-block;
+  border: 2px solid #454545;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #454545;
+  text-decoration: none;
+}
+.button:hover {
+  color: azure;
+  background-color: #454545;
+}
+header .line {
+  background-color: #117050;
+  height: 10px;
 }
 .headerArea {
   display: flex;
@@ -62,14 +97,6 @@ header .line {
   padding-top: 110px;
   padding-bottom: 110px;
 }
-.banner h1 {
-  font-family: "oswald", sans serif;
-  font-size: 80px;
-  font-weight: bold;
-  margin: 0;
-  line-height: 90px;
-  margin-bottom: 26px;
-}
 .bannerImages {
   margin-top: 40px;
 }
@@ -79,4 +106,33 @@ header .line {
   border: 5px solid #117050;
   border-radius: 50%;
   margin-right: 35px;
+}
+.area1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.area1Content {
+  padding: 80px;
+}
+.phrase {
+  margin-bottom: 30px;
+}
+.area1Text {
+  text-transform: capitalize;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+.area1Img1 {
+  background-color: #117050;
+  height: 350px;
+  background-image: url("../img/f2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.area1Img2 {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  background-image: url("../img/f1.jpg");
+  background-position: center;
+  background-size: cover;
 }
