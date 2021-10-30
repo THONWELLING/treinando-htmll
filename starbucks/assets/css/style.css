@@ -162,3 +162,23 @@ header .line {
   background-position: center;
   background-size: cover;
 }
+.area3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.area3Content {
+  padding: 200px 80px;
+  background-image: url("../img/bg2.jpg");
+  background-position: left;
+  background-size: cover;
+}
+.area3Text {
+  text-transform: capitalize;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+.area3Img1 {
+  background-image: url("../img/f5.jpg");
+  background-position: center;
+  background-size: cover;
+}
