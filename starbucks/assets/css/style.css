@@ -182,3 +182,21 @@ header .line {
   background-position: center;
   background-size: cover;
 }
+.area4 {
+  display: grid;
+  grid-template-columns: 470px 1fr;
+  background-color: #e8e9ee;
+}
+.area4Content {
+  padding: 150px 80px;
+}
+.area4Text {
+  text-transform: capitalize;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+.area4Img1 {
+  background-image: url("../img/bg3.jpg");
+  background-position: left;
+  background-size: cover;
+}
