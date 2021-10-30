@@ -48,9 +48,35 @@ header .line {
   height: 16px;
 }
 .headerMenu {
+  margin-left: 60px;
   cursor: pointer;
 }
 .headerMenu img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
+}
+.banner {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.banner h1 {
+  font-family: "oswald", sans serif;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 90px;
+  margin-bottom: 26px;
+}
+.bannerImages {
+  margin-top: 40px;
+}
+.bannerImages img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #117050;
+  border-radius: 50%;
+  margin-right: 35px;
 }
